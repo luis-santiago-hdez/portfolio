@@ -1,21 +1,21 @@
-#Modern full stack developer portfolio built with Next.js
+# Modern full stack developer portfolio built with Next.js
 
-##Features
+## Features
 -Responsive design
 -Featured projects
 -Developer tools and mini apps
 -Dark mode
 
-##Tech Stack
+## Tech Stack
 -React
 -Next.js
 -Typescript
 -Tailwind CSS
 
-##Run Locally 
+## Run Locally 
 ```bash
 npm install
 npm run dev
 ```
 
-##Live Demo
+## Live Demo
