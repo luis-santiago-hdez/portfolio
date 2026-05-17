@@ -11,7 +11,7 @@ import { iconStyle } from "../ui/styles";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col p-4 rounded-xl shadow space-y-3">
+    <div className="flex flex-col p-4 rounded-xl shadow space-y-3 ">
       <img src={project.image} alt={project.title} />
 
       <h2 className="text-lg font-bold">{project.title}</h2>
