@@ -2,7 +2,7 @@ import SkillCard from "../layout/SkillCard";
 
 export default function Skills() {
   return (
-    <section className="flex flex-col p-3 gap-2">
+    <section className="flex flex-col gap-2 scroll-mt-24" id="skills">
       <h2 className="text-2xl text-center">Skills</h2>
       <p>Frontend</p>
       <div className="grid grid-cols-3 md:grid-cols-4 gap-2">

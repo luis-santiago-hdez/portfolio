@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@source "./app/**/*.{js,ts,jsx,tsx}";
+@source "./components/**/*.{js,ts,jsx,tsx}";
 
 :root {
   --background: #ffffff;
@@ -21,4 +23,8 @@
 
 body {
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }

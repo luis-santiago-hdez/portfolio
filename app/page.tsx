@@ -6,15 +6,13 @@ import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <>
-      <div className="flex flex-col justify-center items-center">
-        <Hero />
+    <div className="flex flex-col justify-center items-center">
+      <Hero />
 
-        <Skills />
-        <Projects />
-        <About />
-        <Contact />
-      </div>
-    </>
+      <Skills />
+      <Projects />
+      <About />
+      <Contact />
+    </div>
   );
 }
