@@ -23,11 +23,13 @@ export default function Header() {
               LS
             </div>
 
-            <span className="hidden lg:block text-2xl">LUIS SANTIAGO</span>
+            <span className="hidden lg:block text-2xl">
+              &lt;LUIS SANTIAGO/&gt;
+            </span>
           </div>
 
           <div className="flex gap-4">
-            <ul className="hidden md:flex items-center text-2xl gap-6">
+            <ul className="hidden md:flex items-center text-xl lg:text-2xl gap-6">
               {links.map((link) => (
                 <li key={link.href}>
                   <a

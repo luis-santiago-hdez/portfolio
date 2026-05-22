@@ -6,7 +6,7 @@ import { textStyle } from "@/components/ui/styles";
 
 export default function Projects() {
   return (
-    <section className="w-full p-3 scroll-mt-24" id="projects">
+    <section className=" p-3 scroll-mt-24" id="projects">
       <div className="flex flex-col gap-2">
         <h2 className="text-center text-2xl">Available Soon</h2>
 

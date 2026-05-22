@@ -18,10 +18,14 @@ export default function Hero() {
         ></Image>
       </div>
 
-      <div className="flex flex-col gap-5 flex-1 text-center ">
-        <h1 className="text-4xl">Hi I&apos;m Luis Santiago</h1>
-        <h2 className="text-2xl">Full Stack Developer</h2>
-        <p className="text-xl">
+      <div className="flex flex-col gap-5 flex-1 text-center max-w-2xl ">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl">
+          Hi I&apos;m Luis Santiago
+        </h1>
+        <h2 className="text-xl md:text-2xl lg:text-3xl">
+          Full Stack Developer
+        </h2>
+        <p className="text-lg md:text-xl lg:text-2xl">
           I enjoy building modern, scalable web applications. I&apos;m
           passionate about web development and I focus on creating practical
           solutions to real-world problems.
