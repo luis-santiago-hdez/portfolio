@@ -14,7 +14,10 @@ export default function Footer() {
           >
             <FaGithub />
           </Anchor>
-          <Anchor href="https://linkedin.com" className={iconStyle}>
+          <Anchor
+            href="https://www.linkedin.com/in/luissantiagohdez/"
+            className={iconStyle}
+          >
             <FaLinkedin />
           </Anchor>
         </div>
