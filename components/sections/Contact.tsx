@@ -1,11 +1,40 @@
+"use client";
+
 import Button from "../ui/Button";
 import { textStyle } from "../ui/styles";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
+import React from "react";
 
 const inputStyle = "border border-zinc-600 rounded-lg p-2 bg-transparent";
 
 export default function Contact() {
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const form = e.currentTarget;
+
+    try {
+      await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        form,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
+      );
+
+      setStatus("success");
+      form.reset();
+    } catch {
+      setStatus("error");
+    }
+  }
   return (
     <section
       className="flex flex-col w-full p-3 gap-4 scroll-mt-24 md:flex-row justify-center"
@@ -13,7 +42,7 @@ export default function Contact() {
     >
       <div className="border border-zinc-500 p-4 rounded-2xl w-full">
         <h2 className="text-2xl mb-4 text-center">Send me an Email</h2>
-        <form action="" className="flex flex-col gap-4">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
             <label htmlFor="name">Name</label>
             <input
@@ -47,9 +76,16 @@ export default function Contact() {
               className={`${inputStyle} resize-none`}
             />
           </div>
-          <Button type="submit" className={textStyle}>
-            Send Email
+          <Button
+            type="submit"
+            className={textStyle}
+            disabled={status === "sending"}
+          >
+            {status === "sending" ? "sending..." : "Send Email"}
           </Button>
+
+          {status === "success" && <p>Message sent successfully!</p>}
+          {status === "error" && <p>Something went wrong. Try again.</p>}
         </form>
       </div>
 

@@ -8,7 +8,10 @@ export default function Footer() {
     <footer className="flex justify-center">
       <div>
         <div className="flex items-center justify-center">
-          <Anchor href="https://github.com" className={iconStyle}>
+          <Anchor
+            href="https://github.com/luis-santiago-hdez"
+            className={iconStyle}
+          >
             <FaGithub />
           </Anchor>
           <Anchor href="https://linkedin.com" className={iconStyle}>

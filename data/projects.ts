@@ -23,8 +23,8 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO optimized"],
     technologies: ["Next.js", "Typescript", "Tailwind"],
 
-    github: "https://www.google.com",
-    demo: "g",
+    github: "https://github.com/luis-santiago-hdez",
+    demo: "https://github.com/luis-santiago-hdez",
   },
 
   {
@@ -37,8 +37,8 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO optimized"],
     technologies: ["Next.js", "Typescript", "Tailwind"],
 
-    github: "g",
-    demo: "g",
+    github: "https://github.com/luis-santiago-hdez",
+    demo: "https://github.com/luis-santiago-hdez",
   },
 
   {
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     features: ["Responsive design", "SEO optimized"],
     technologies: ["Next.js", "Typescript", "Tailwind"],
 
-    github: "g",
-    demo: "g",
+    github: "https://github.com/luis-santiago-hdez",
+    demo: "https://github.com/luis-santiago-hdez",
   },
 ];
