@@ -1,6 +1,9 @@
 export default function About() {
   return (
-    <section className="flex flex-col p-3 gap-2 scroll-mt-24" id="about">
+    <section
+      className="flex flex-col p-3 gap-2 scroll-mt-24 text-xl"
+      id="about"
+    >
       <h2 className="text-2xl text-center">About Me</h2>
       <p>
         I&apos;m a full stack developer focused on building modern, responsive,

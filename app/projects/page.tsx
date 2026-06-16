@@ -7,15 +7,14 @@ import { textStyle } from "@/components/ui/styles";
 export default function Projects() {
   return (
     <section className=" p-3 scroll-mt-24" id="projects">
-      <div className="flex flex-col gap-2">
-        <h2 className="text-center text-2xl">Available Soon</h2>
-
+      <h2 className="text-center text-2xl">Available Soon</h2>
+      <div className="flex flex-col gap-2 md:flex-row">
         {projects.map((project) => (
           <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
       <div className="flex items-center justify-center p-4">
-        <Link href="" className={textStyle}>
+        <Link href="/allprojects" className={textStyle}>
           All projects
         </Link>
       </div>

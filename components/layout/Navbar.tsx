@@ -6,11 +6,11 @@ import Button from "../ui/Button";
 import { iconStyle } from "../ui/styles";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/allprojects", label: "Projects" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Header() {

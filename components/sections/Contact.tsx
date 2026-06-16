@@ -8,10 +8,10 @@ const inputStyle = "border border-zinc-600 rounded-lg p-2 bg-transparent";
 export default function Contact() {
   return (
     <section
-      className="flex flex-col w-full p-3 gap-4 scroll-mt-24"
+      className="flex flex-col w-full p-3 gap-4 scroll-mt-24 md:flex-row justify-center"
       id="contact"
     >
-      <div className="border border-zinc-500 p-4 rounded-2xl">
+      <div className="border border-zinc-500 p-4 rounded-2xl w-full">
         <h2 className="text-2xl mb-4 text-center">Send me an Email</h2>
         <form action="" className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
@@ -53,7 +53,7 @@ export default function Contact() {
         </form>
       </div>
 
-      <div className="border border-zinc-500 p-4 rounded-2xl flex flex-col gap-2">
+      <div className="border border-zinc-500 p-4 rounded-2xl flex flex-col gap-2 w-full">
         <h2 className="text-center text-2xl">Contact Information</h2>
         <div className="flex gap-2 items-center">
           <div className="text-2xl">
