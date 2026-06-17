@@ -19,10 +19,10 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-col gap-5 flex-1 text-center max-w-2xl ">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl">
           Hi I&apos;m Luis Santiago
         </h1>
-        <h2 className="text-xl md:text-2xl lg:text-3xl">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl">
           Full Stack Developer
         </h2>
         <p className="text-lg md:text-xl lg:text-2xl">
@@ -34,7 +34,7 @@ export default function Hero() {
           <a href="#contact" className={textStyle}>
             Contact Me
           </a>
-          <Link href="/allprojects" className={textStyle}>
+          <Link href="/projects" className={textStyle}>
             Projects
           </Link>
         </div>

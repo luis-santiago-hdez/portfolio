@@ -18,7 +18,7 @@ export const projects: Project[] = [
     title: "Note App",
     updatedAt: "May 08, 2026",
     description: "In this app you can save many notes in the cloud...",
-    image: "/images/note.png",
+    image: "/images/note.jpg",
 
     features: ["Responsive design", "SEO optimized"],
     technologies: ["Next.js", "Typescript", "Tailwind"],

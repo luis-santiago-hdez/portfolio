@@ -11,8 +11,14 @@ import { iconStyle } from "../ui/styles";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col p-4 rounded-xl shadow space-y-3 ">
-      <img src={project.image} alt={project.title} />
+    <div className="flex flex-col p-4 rounded-xl shadow  ">
+      <Image
+        src={project.image}
+        alt={project.title}
+        width={1600}
+        height={900}
+        className="w-full h-auto rounded-lg"
+      />
 
       <h2 className="text-lg font-bold">{project.title}</h2>
 
