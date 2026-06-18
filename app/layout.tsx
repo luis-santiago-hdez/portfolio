@@ -29,7 +29,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col bg-zinc-200">
+      <body className="min-h-screen flex flex-col bg-zinc-200 gap-4 md:gap-6 lg:gap-8">
         <Navbar />
         <main className=" px-4 sm:px-6 lg:px-8">{children}</main>
 
@@ -38,3 +38,4 @@ export default function RootLayout({
     </html>
   );
 }
+-8;

@@ -51,7 +51,7 @@ export default function Header() {
               LS
             </div>
 
-            <span className="hidden lg:block text-2xl">
+            <span className="hidden lg:block text-2xl text-blue-400">
               &lt;LUIS SANTIAGO/&gt;
             </span>
           </div>

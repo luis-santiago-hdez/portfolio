@@ -7,7 +7,7 @@ import ProjectsDemo from "@/components/sections/Projects";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center gap-4 md:gap-6 lg:gap-8">
       <Hero />
 
       <Skills />

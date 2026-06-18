@@ -6,7 +6,10 @@ import { textStyle } from "@/components/ui/styles";
 
 export default function ProjectsDemo() {
   return (
-    <section className=" p-3 scroll-mt-24" id="projects">
+    <section
+      className="flex flex-col scroll-mt-24 gap-4 md:gap-6"
+      id="projects"
+    >
       <h3 className="text-center text-2xl md:text-3xl lg:text-4xl">
         Available Soon
       </h3>
@@ -15,7 +18,7 @@ export default function ProjectsDemo() {
           <ProjectCard key={project.slug} project={project} />
         ))}
       </div>
-      <div className="flex items-center justify-center p-4">
+      <div className="flex items-center justify-center">
         <Link href="/projects" className={textStyle}>
           All projects
         </Link>
